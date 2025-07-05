@@ -66,7 +66,7 @@ export default function HeroSection() {
         <Image
           className="object-cover w-[400px] h-[140px] -rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
-          src="/images/img_1.jpg"
+          src="/images/img_1.webp"
           alt="About me"
           width={400}
           height={250}
@@ -74,7 +74,7 @@ export default function HeroSection() {
         <Image
           className="object-cover w-[400px] h-[140px] rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
-          src="/images/img_2.jpeg"
+          src="/images/img_2.webp"
           alt="About me"
           width={400}
           height={250}
@@ -82,7 +82,7 @@ export default function HeroSection() {
         <Image
           className="object-cover w-[400px] h-[140px] -rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
-          src="/images/img_3.jpeg"
+          src="/images/img_3.webp"
           alt="About me"
           width={400}
           height={250}
