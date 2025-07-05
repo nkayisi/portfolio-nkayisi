@@ -8,26 +8,26 @@ const projects = [
     href: "https://nkayisi.com",
     description:
       "My personal portfolio website built with Next.js, Tailwind CSS, and Shadcn UI.",
-    imgSrc: "/images/projects/portfolio.png",
+    imgSrc: "/images/projects/portfolio.webp",
   },
   {
     title: "Health Winning World",
     href: "https://hww-invest.com",
     description:
       "A informational system for a health and wellness company based on the mlm business model.",
-    imgSrc: "/images/projects/hww.png",
+    imgSrc: "/images/projects/hww.webp",
   },
   {
     title: "Volontaires pour la Protection de la Faune et Flore",
     href: "https://volontaires.org",
     description: "A website for a conservation organization.",
-    imgSrc: "/images/projects/vpff.png",
+    imgSrc: "/images/projects/vpff.webp",
   },
   {
     title: "Health Success International",
     href: "https://hww-company.com",
     description: "A website for a health and wellness company.",
-    imgSrc: "/images/projects/hsi.png",
+    imgSrc: "/images/projects/hsi.webp",
   },
 ];
 
