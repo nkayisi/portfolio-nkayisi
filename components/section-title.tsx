@@ -14,7 +14,7 @@ export default function SectionTitle({
   return (
     <div className="w-full flex flex-col gap-2 text-muted-foreground leading-relaxed">
       <div className="flex flex-row gap-4 flex-wrap justify-between items-center">
-        <h3 className="text-primary text-sm flex items-center gap-2 uppercase">
+        <h3 className="text-primary text-xs flex items-center gap-2 uppercase">
           {icon}
           {title}
         </h3>

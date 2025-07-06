@@ -36,7 +36,7 @@ export default function FurtherTraining() {
       <SectionTitle
         title="Further Training"
         description="I've completed several training programs to enhance my skills and stay up-to-date with the latest technologies."
-        icon={<Brain className="w-6 h-6" />}
+        icon={<Brain className="w-5 h-5" />}
       />
 
       {/* Further Training Details */}

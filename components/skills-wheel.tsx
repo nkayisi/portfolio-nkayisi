@@ -13,7 +13,7 @@ export default function SkillsWheel() {
       <SectionTitle
         title="Skills & Technologies"
         description="I've developed expertise across the full web development stack, from crafting responsive user interfaces to building robust backend systems and managing databases."
-        icon={<Code className="w-6 h-6" />}
+        icon={<Code className="w-5 h-5" />}
       >
         <Button
           variant="outline"

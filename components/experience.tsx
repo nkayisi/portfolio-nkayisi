@@ -15,7 +15,7 @@ const experiences = [
     {
         title: "Front-end Developer",
         description: "Developed dynamic and responsive web applications using React, Next.js, and TypeScript. Collaborated with cross-functional teams to integrate payment systems like Google and Stripe, delivering seamless user experiences for diverse clients.",
-        year: "2023 - 2024",
+        year: "2022 - 2023",
         company: "AG-ConsultTech",
         location: "Remote",
         color: "blue-300",
@@ -23,7 +23,7 @@ const experiences = [
     {
         title: "Full-stack Developer",
         description: "Built and maintained robust web applications across the entire stack. Leveraged modern frameworks and cloud technologies to deliver scalable solutions, ensuring high performance and reliability for business-critical projects.",
-        year: "2020 - 2023",
+        year: "2020 - 2022",
         company: "Hebel Corporation",
         location: "Beni, Democratic Republic of Congo",
         color: "primary",
@@ -36,9 +36,9 @@ export function Experience() {
     return (
         <div className="flex flex-col gap-8">
             <SectionTitle
-                title="Experience"
+                title="Recent Experience"
                 description="I've completed several training programs to enhance my skills and stay up-to-date with the latest technologies."
-                icon={<Expand className="w-6 h-6" />}
+                icon={<Expand className="w-5 h-5" />}
             />
             <div className="flex flex-col gap-4">
                 {experiences.map((experience) => (

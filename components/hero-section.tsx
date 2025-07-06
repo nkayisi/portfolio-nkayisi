@@ -1,10 +1,23 @@
+'use client'
+
 import { ThemeToggle } from "@/components/theme-toggle";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
+
 
 export default function HeroSection() {
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"discovery-call"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
+
   return (
     <div className="w-full relative pt-16">
       <div className="w-full sm:px-10 px-4 flex flex-col gap-8 justify-center items-center">
@@ -36,9 +49,11 @@ export default function HeroSection() {
 
         <div className="flex gap-4 items-center flex-row flex-wrap">
           <a
-            href="mailto:nelsonkayisirirya5@gmail.com"
-            target="_blank"
+            href="#"
             rel="noopener noreferrer"
+            data-cal-namespace="discovery-call"
+            data-cal-link="nkayisi/discovery-call"
+            data-cal-config='{"layout":"month_view"}'
           >
             <HoverBorderGradient
               containerClassName="rounded-full"
@@ -49,9 +64,7 @@ export default function HeroSection() {
           </a>
 
           <a
-            href="mailto:nelsonkayisirirya5@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
           >
             <HoverBorderGradient
               containerClassName="rounded-full"

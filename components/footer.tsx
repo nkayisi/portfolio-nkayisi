@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center justify-center w-10 h-10 rounded-full border border-border transition-all duration-200 hover:bg-accent hover:text-accent-foreground hover:scale-110"
-          href="https://twitter.com/yourusername"
+          href="https://twitter.com/nkayisi"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,7 +15,7 @@ export default function Footer() {
         </a>
         <a
           className="flex items-center justify-center w-10 h-10 rounded-full border border-border transition-all duration-200 hover:bg-accent hover:text-accent-foreground hover:scale-110"
-          href="https://github.com/yourusername"
+          href="https://github.com/nkayisi"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -23,7 +23,7 @@ export default function Footer() {
         </a>
         <a
           className="flex items-center justify-center w-10 h-10 rounded-full border border-border transition-all duration-200 hover:bg-accent hover:text-accent-foreground hover:scale-110"
-          href="https://facebook.com/yourusername"
+          href="https://facebook.com/nelsonkayisirirya"
           target="_blank"
           rel="noopener noreferrer"
         >

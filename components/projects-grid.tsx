@@ -39,7 +39,7 @@ export default function ProjectsGrid() {
       <SectionTitle
         title="Recent Projects"
         description="I've worked on a variety of projects, from small personal websites to large-scale enterprise applications."
-        icon={<Package className="w-6 h-6" />}
+        icon={<Package className="w-5 h-5" />}
       />
 
       {/* Projects Grid */}

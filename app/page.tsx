@@ -7,6 +7,7 @@ import ProjectsGrid from "@/components/projects-grid";
 import SkillsWheel from "@/components/skills-wheel";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { Experience } from "@/components/experience";
+import { ContactSection } from "@/components/contact";
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
 
           {/* Recommendations */}
           <Recommendations />
+
+          {/*  */}
+          <ContactSection />
 
           {/* Footer */}
           <Footer />
