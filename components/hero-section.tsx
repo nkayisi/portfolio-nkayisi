@@ -36,7 +36,7 @@ export default function HeroSection() {
         />
         <div className="flex flex-col gap-4 text-sm/6 text-center font-[family-name:var(--font-geist-mono)]">
           <h1 className="text-2xl font-bold text-foreground">
-            Hi, I'm <span className="text-primary">Nelson Kayisi</span>
+            Hi, I&apos;m <span className="text-primary">Nelson Kayisi</span>
           </h1>
           <p className="tracking-[-.01em] text-muted-foreground">
             <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
@@ -59,7 +59,7 @@ export default function HeroSection() {
               containerClassName="rounded-full"
               className="dark:bg-black bg-primary/30 cursor-pointer text-primary flex items-center space-x-2 px-6 py-2 text-sm sm:text-base"
             >
-              I'm available for work
+              I&apos;m available for work
             </HoverBorderGradient>
           </a>
 
@@ -108,7 +108,7 @@ export default function HeroSection() {
           JavaScript, TypeScript, and Python.
         </p>
         <p>
-          When I'm not coding, you can find me exploring new technologies,
+          When I&apos;m not coding, you can find me exploring new technologies,
           contributing to open source projects, or sharing knowledge with the
           developer community.
         </p>

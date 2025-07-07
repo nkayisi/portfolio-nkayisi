@@ -1,4 +1,3 @@
-import { IconDownload } from "@tabler/icons-react";
 import { Expand } from "lucide-react";
 import SectionTitle from "./section-title";
 
