@@ -1,3 +1,5 @@
+"use client";
+
 import { Code } from "lucide-react";
 import { IconDownload } from "@tabler/icons-react";
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
@@ -8,21 +10,22 @@ import SectionTitle from "./section-title";
 export default function SkillsWheel() {
   return (
     <div>
-
       {/* Section Title */}
       <SectionTitle
         title="Skills & Technologies"
         description="I've developed expertise across the full web development stack, from crafting responsive user interfaces to building robust backend systems and managing databases."
         icon={<Code className="w-5 h-5" />}
       >
-        <Button
-          variant="outline"
-          className="text-sm leading-tight tracking-[-0.015em] py-2 px-3.5 min-w-0 !text-primary"
-        >
-          <IconDownload className="w-4 h-4 mr-2" />
-          Get my resume
-        </Button>
-      </SectionTitle> 
+        <a href="/Resume-Nelson-Kayisi.pdf" download>
+          <Button
+            variant="outline"
+            className="text-sm leading-tight tracking-[-0.015em] py-2 px-3.5 min-w-0 !text-primary"
+          >
+            <IconDownload className="w-4 h-4 mr-2" />
+            Get my resume
+          </Button>
+        </a>
+      </SectionTitle>
 
       {/* Skills Wheel */}
       <div className="relative flex h-[600px] w-full flex-col items-center justify-center overflow-hidden">

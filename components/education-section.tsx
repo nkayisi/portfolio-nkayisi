@@ -8,7 +8,7 @@ export default function EducationSection() {
       {/* Section Title */}
       <SectionTitle
         title="Education"
-        description="I've studied at the Christian University Bilingual of Congo (UCBC), where I earned a Bachelor's (B.Sc +4) degree in Computer Science."
+        description="I've studied at the Christian Bilingual University of Congo (UCBC), where I earned a Bachelor's (B.Sc +4) degree in Computer Engineering."
         icon={<School className="w-6 h-6" />}
       />
 
@@ -27,7 +27,7 @@ export default function EducationSection() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Christian University Bilingual of Congo - Beni, RDC"
+            title="Christian Bilingual University of Congo - Beni, RDC"
           />
         </div>
       </div>

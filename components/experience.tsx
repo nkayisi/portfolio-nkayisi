@@ -42,7 +42,7 @@ export function Experience() {
             <div className="flex flex-col gap-4">
                 {experiences.map((experience) => (
                     <div key={experience.title} className="flex flex-row gap-5 border border-slate-200 dark:border-slate-900 bg-zinc-50 dark:bg-gray-950 rounded-lg p-6">
-                        <div className={`bg-slate-200 dark:bg-background flex items-center justify-center border border-border min-w-8 min-h-12 rounded-full`}></div>
+                        <div className={`bg-slate-200 dark:bg-primary/35 flex items-center justify-center border border-border min-w-6 min-h-12 rounded-full`}></div>
                         <div className="flex flex-col gap-2">
                             <span className="text-sm text-gray-500 italic">{experience.year}</span>
                             <h4 className="font-medium">{experience.title}</h4>

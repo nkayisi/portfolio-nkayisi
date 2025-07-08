@@ -14,7 +14,7 @@ const projects = [
     title: "Health Winning World",
     href: "https://hww-invest.com",
     description:
-      "A informational system for a health and wellness company based on the mlm business model.",
+      "An informational system for a health and wellness company based on the mlm business model.",
     imgSrc: "/images/projects/hww.webp",
   },
   {
