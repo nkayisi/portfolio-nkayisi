@@ -1,13 +1,12 @@
+import { ContactSection } from "@/components/contact";
 import EducationSection from "@/components/education-section";
+import { Experience } from "@/components/experience";
 import Footer from "@/components/footer";
 import FurtherTraining from "@/components/futher-training";
 import HeroSection from "@/components/hero-section";
-import Recommendations from "@/components/recommendations";
 import ProjectsGrid from "@/components/projects-grid";
 import SkillsWheel from "@/components/skills-wheel";
 import { Spotlight } from "@/components/ui/spotlight-new";
-import { Experience } from "@/components/experience";
-import { ContactSection } from "@/components/contact";
 
 export default function Home() {
   return (
