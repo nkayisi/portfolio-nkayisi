@@ -52,7 +52,7 @@ export function ContactSection() {
           <div>
             <div className="flex items-start justify-between gap-4">
               <h1 className="text-lg text-muted-foreground font-semibold">
-                Nelson Kayisi
+                Nelson K. Kayisi
               </h1>
               <Image
                 src="/images/profile.jpg"

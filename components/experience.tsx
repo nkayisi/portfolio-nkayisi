@@ -36,7 +36,7 @@ export function Experience() {
         <div className="flex flex-col gap-8">
             <SectionTitle
                 title="Recent Experience"
-                description="I've completed several training programs to enhance my skills and stay up-to-date with the latest technologies."
+                description="My professional experience covers software architecture and full-stack development, delivering scalable web and mobile applications as well as impactful solutions for businesses of all sizes."
                 icon={<Expand className="w-5 h-5" />}
             />
             <div className="flex flex-col gap-4">

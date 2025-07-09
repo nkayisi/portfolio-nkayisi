@@ -36,14 +36,17 @@ export default function HeroSection() {
         />
         <div className="flex flex-col gap-4 text-sm/6 text-center font-[family-name:var(--font-geist-mono)]">
           <h1 className="text-2xl font-bold text-foreground">
-            Hi, I&apos;m <span className="text-primary">Nelson Kayisi</span>
+            Hi, I&apos;m <span className="text-primary">Nelson K. Kayisi</span>
           </h1>
           <p className="tracking-[-.01em] text-muted-foreground">
             <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
-              Full-stack developer
+              Full-stack Developer
+            </code>{" "}
+            and <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
+              Software Architect
             </code>{" "}
             with years of experience in building web and mobile applications.
-            Passionate about creating beautiful and functional user experiences.
+            Passionate about AI and creating beautiful and functional user experiences.
           </p>
         </div>
 
@@ -103,9 +106,9 @@ export default function HeroSection() {
       </div>
       <div className="w-full sm:px-10 px-4 flex flex-col text-muted-foreground leading-relaxed">
         <p className="mb-4">
-          I specialize in modern web technologies and love building applications
-          that make a difference. My expertise includes React, Next.js,
-          JavaScript, TypeScript, and Python.
+          I specialize in modern mobile and web technologies and love building applications
+          that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js,
+          JavaScript/TypeScript, React Native and Python/Django.
         </p>
         <p>
           When I&apos;m not coding, you can find me exploring new technologies,

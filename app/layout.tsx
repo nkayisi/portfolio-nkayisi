@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nelson Kayisi",
-  description: "Full-stack developer with years of experience in building web and mobile applications.",
+  title: "Nelson K. Kayisi",
+  description: "Full-stack developer and software engineer with years of experience in building web and mobile applications.",
 };
 
 export default function RootLayout({
