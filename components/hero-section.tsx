@@ -1,7 +1,5 @@
 'use client'
 
-import { ThemeToggle } from "@/components/theme-toggle";
-import { LanguageToggle } from "@/components/language-toggle";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Mail } from "lucide-react";
 import Image from "next/image";

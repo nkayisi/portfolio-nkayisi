@@ -4,7 +4,9 @@ import { Expand } from "lucide-react";
 import SectionTitle from "./section-title";
 import { useLingui } from '@lingui/react';
 
-const getExperiences = (_: any) => [
+type TranslationFunction = (params: { id: string; message: string }) => string;
+
+const getExperiences = (_: TranslationFunction) => [
     {
         title: _({
             id: 'experience.fullstack_web_dev',

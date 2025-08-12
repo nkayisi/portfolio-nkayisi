@@ -7,7 +7,9 @@ import React from "react";
 import SectionTitle from "./section-title";
 import { useLingui } from '@lingui/react';
 
-const getTrainings = (_: any) => [
+type TranslationFunction = (params: { id: string; message: string }) => string;
+
+const getTrainings = (_: TranslationFunction) => [
   {
     title: "Udemy",
     subtitle: _({

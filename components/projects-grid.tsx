@@ -5,7 +5,9 @@ import Image from "next/image";
 import SectionTitle from "./section-title";
 import { useLingui } from '@lingui/react';
 
-const getProjects = (_: any) => [
+type TranslationFunction = (params: { id: string; message: string }) => string;
+
+const getProjects = (_: TranslationFunction) => [
   {
     title: _({
       id: 'projects.portfolio.title',
