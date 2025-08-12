@@ -6,10 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
+    "@lingui/core": "^5.4.1",
+    "@lingui/macro": "^5.4.1",
+    "@lingui/react": "^5.4.1",
     "@radix-ui/react-slot": "^1.2.3",
     "@tabler/icons-react": "^3.34.0",
     "class-variance-authority": "^0.7.1",
@@ -22,11 +27,18 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
     "@eslint/eslintrc": "^3",
+    "@lingui/cli": "^5.4.1",
+    "@lingui/loader": "^5.4.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "babel-plugin-macros": "^3.1.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4",

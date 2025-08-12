@@ -1,41 +1,70 @@
+"use client";
+
 import { Brain } from "lucide-react";
 import { Button } from "./ui/moving-border";
 import { IconDownload } from "@tabler/icons-react";
 import React from "react";
 import SectionTitle from "./section-title";
+import { useLingui } from '@lingui/react';
 
-const trainings = [
+const getTrainings = (_: any) => [
   {
     title: "Udemy",
-    subtitle:
-      "AI application development with React, Next.js, TypeScript, Google and Stripe",
-    description: "Completed an in-depth training focused on building AI-powered web applications. Acquired hands-on experience in integrating advanced APIs, payment solutions, and deploying scalable, production-ready projects using the latest technologies.",
+    subtitle: _({
+      id: 'training.udemy.subtitle',
+      message: 'AI application development with React, Next.js, TypeScript, Google and Stripe'
+    }),
+    description: _({
+      id: 'training.udemy.description',
+      message: 'Completed an in-depth training focused on building AI-powered web applications. Acquired hands-on experience in integrating advanced APIs, payment solutions, and deploying scalable, production-ready projects using the latest technologies.'
+    }),
     year: 2024,
     certificate: "https://www.udemy.com/certificate/UC-1234567890/",
   },
   {
     title: "OpenClassrooms",
-    subtitle: "Mettre à place une architecture microservices",
-    description: "Gained practical expertise in designing, deploying, and managing microservices-based systems. Learned to optimize application scalability, maintainability, and resilience through service orchestration.",
+    subtitle: _({
+      id: 'training.openclassrooms.subtitle',
+      message: 'Mettre en place une architecture microservices'
+    }),
+    description: _({
+      id: 'training.openclassrooms.description',
+      message: 'Gained practical expertise in designing, deploying, and managing microservices-based systems. Learned to optimize application scalability, maintainability, and resilience through service orchestration.'
+    }),
     year: 2023,
     certificate: "https://www.openclassrooms.com/certificate/1234567890",
   },
   {
-    title: "Kubernets Inc.",
-    subtitle: "Certification Google Cloud, Twilio and Slack",
-    description: "Developed skills in deploying and managing cloud infrastructure, integrating messaging services, and automating workflows to enhance application functionality and scalability.",
+    title: "Kubernetes Inc.",
+    subtitle: _({
+      id: 'training.kubernetes.subtitle',
+      message: 'Certification Google Cloud, Twilio and Slack'
+    }),
+    description: _({
+      id: 'training.kubernetes.description',
+      message: 'Developed skills in deploying and managing cloud infrastructure, integrating messaging services, and automating workflows to enhance application functionality and scalability.'
+    }),
     year: 2019,
     certificate: "https://www.kubernetsinc.com/certificate/1234567890",
   },
 ];
 
 export default function FurtherTraining() {
+  const { _ } = useLingui();
+  const trainings = getTrainings(_);
+
   return (
     <div className="flex flex-col gap-8">
       {/* Section Title */}
       <SectionTitle
-        title="Further Training"
-        description="I've completed several training programs to enhance my skills and stay up-to-date with the latest technologies."
+        title={_({
+          id: 'training.title',
+          message: 'Further Training'
+        })}
+        description={_({
+          id: 'training.description',
+          message: 'I\'ve completed several training programs to enhance my skills and stay up-to-date with the latest technologies.'
+        })}
         icon={<Brain className="w-5 h-5" />}
       />
 
@@ -51,7 +80,10 @@ export default function FurtherTraining() {
                   className="text-[10px] leading-tight tracking-[-0.015em] py-2 px-3.5 min-w-0 !text-primary"
                 >
                   <IconDownload className="w-4 h-4 mr-2" />
-                  Get my certificate
+                  {_({
+                    id: 'training.get_certificate',
+                    message: 'Get my certificate'
+                  })}
                 </Button>
               </div>
             </div>

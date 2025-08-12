@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-08-12 20:09+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+
+#: components/hero-section.tsx:91
+#: components/hero-section.tsx:99
+#: components/hero-section.tsx:107
+msgid "About me"
+msgstr "About me"
+
+#: components/hero-section.tsx:50
+msgid "and"
+msgstr "and"
+
+#: components/hero-section.tsx:48
+msgid "Full-stack Developer"
+msgstr "Full-stack Developer"
+
+#: components/hero-section.tsx:44
+msgid "Hi, I'm <0>Nelson K. Kayisi</0>"
+msgstr "Hi, I'm <0>Nelson K. Kayisi</0>"
+
+#: components/hero-section.tsx:114
+msgid "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
+msgstr "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
+
+#: components/hero-section.tsx:70
+msgid "I'm available for work"
+msgstr "I'm available for work"
+
+#: components/hero-section.tsx:37
+msgid "Photo of me"
+msgstr "Photo of me"
+
+#: components/hero-section.tsx:51
+msgid "Software Architect"
+msgstr "Software Architect"
+
+#: components/hero-section.tsx:119
+msgid "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
+msgstr "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
+
+#: components/hero-section.tsx:53
+msgid "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
+msgstr "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."

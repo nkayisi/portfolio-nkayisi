@@ -1,30 +1,62 @@
+"use client";
+
 import { Expand } from "lucide-react";
 import SectionTitle from "./section-title";
+import { useLingui } from '@lingui/react';
 
-const experiences = [
+const getExperiences = (_: any) => [
     {
-        title: "Full-stack Web Developer",
-        description:
-            "I design and develop applications tailored to the needs of SMEs and large companies, ensuring their performance and scalability. I also deploy and secure scalable applications on servers, guaranteeing their reliability and operational continuity.",
-        year: "2023 - Today",
+        title: _({
+            id: 'experience.fullstack_web_dev',
+            message: 'Full-stack Web Developer'
+        }),
+        description: _({
+            id: 'experience.fullstack_web_dev_desc',
+            message: 'I design and develop applications tailored to the needs of SMEs and large companies, ensuring their performance and scalability. I also deploy and secure scalable applications on servers, guaranteeing their reliability and operational continuity.'
+        }),
+        year: "2023 - " + _({
+            id: 'experience.today',
+            message: 'Today'
+        }),
         company: "Quantum Vertex SA",
-        location: "Kinshasa, Democratic Republic of Congo",
+        location: _({
+            id: 'experience.kinshasa_drc',
+            message: 'Kinshasa, Democratic Republic of Congo'
+        }),
         color: "secondary",
     },
     {
-        title: "Front-end Developer",
-        description: "Developed dynamic and responsive web applications using React, Next.js, and TypeScript. Collaborated with cross-functional teams to integrate payment systems like Google and Stripe, delivering seamless user experiences for diverse clients.",
+        title: _({
+            id: 'experience.frontend_dev',
+            message: 'Front-end Developer'
+        }),
+        description: _({
+            id: 'experience.frontend_dev_desc',
+            message: 'Developed dynamic and responsive web applications using React, Next.js, and TypeScript. Collaborated with cross-functional teams to integrate payment systems like Google and Stripe, delivering seamless user experiences for diverse clients.'
+        }),
         year: "2022 - 2023",
         company: "AG-ConsultTech",
-        location: "Remote",
+        location: _({
+            id: 'experience.remote',
+            message: 'Remote'
+        }),
         color: "blue-300",
     },
     {
-        title: "Full-stack Developer",
-        description: "Built and maintained robust web applications across the entire stack. Leveraged modern frameworks and cloud technologies to deliver scalable solutions, ensuring high performance and reliability for business-critical projects.",
+        title: _({
+            id: 'experience.fullstack_dev',
+            message: 'Full-stack Developer'
+        }),
+        description: _({
+            id: 'experience.fullstack_dev_desc',
+            message: 'Built and maintained robust web applications across the entire stack. Leveraged modern frameworks and cloud technologies to deliver scalable solutions, ensuring high performance and reliability for business-critical projects.'
+        }),
         year: "2020 - 2022",
         company: "Hebel Corporation",
-        location: "Beni, Democratic Republic of Congo",
+        location: _({
+            id: 'experience.beni_drc',
+            message: 'Beni, Democratic Republic of Congo'
+        }),
         color: "primary",
     },
 ];
@@ -32,11 +64,20 @@ const experiences = [
 
 
 export function Experience() {
+    const { _ } = useLingui();
+    const experiences = getExperiences(_);
+
     return (
         <div className="flex flex-col gap-8">
             <SectionTitle
-                title="Recent Experience"
-                description="My professional experience covers software architecture and full-stack development, delivering scalable web and mobile applications as well as impactful solutions for businesses of all sizes."
+                title={_({
+                    id: 'experience.title',
+                    message: 'Recent Experience'
+                })}
+                description={_({
+                    id: 'experience.description',
+                    message: 'My professional experience covers software architecture and full-stack development, delivering scalable web and mobile applications as well as impactful solutions for businesses of all sizes.'
+                })}
                 icon={<Expand className="w-5 h-5" />}
             />
             <div className="flex flex-col gap-4">

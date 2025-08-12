@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-08-12 20:09+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+
+#: components/hero-section.tsx:91
+#: components/hero-section.tsx:99
+#: components/hero-section.tsx:107
+msgid "About me"
+msgstr "À propos de moi"
+
+#: components/hero-section.tsx:50
+msgid "and"
+msgstr "et"
+
+#: components/hero-section.tsx:48
+msgid "Full-stack Developer"
+msgstr "Développeur Full-stack"
+
+#: components/hero-section.tsx:44
+msgid "Hi, I'm <0>Nelson K. Kayisi</0>"
+msgstr "Salut, je suis <0>Nelson K. Kayisi</0>"
+
+#: components/hero-section.tsx:114
+msgid "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
+msgstr "Je me spécialise dans les technologies mobiles et web modernes et j'adore créer des applications qui font la différence. Mon expertise inclut React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native et Python/Django."
+
+#: components/hero-section.tsx:70
+msgid "I'm available for work"
+msgstr "Je suis disponible pour travailler"
+
+#: components/hero-section.tsx:37
+msgid "Photo of me"
+msgstr "Ma photo"
+
+#: components/hero-section.tsx:51
+msgid "Software Architect"
+msgstr "Architecte Logiciel"
+
+#: components/hero-section.tsx:119
+msgid "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
+msgstr "Quand je ne code pas, vous pouvez me trouver en train d'explorer de nouvelles technologies, de contribuer à des projets open source, ou de partager mes connaissances avec la communauté de développeurs."
+
+#: components/hero-section.tsx:53
+msgid "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
+msgstr "avec des années d'expérience dans la création d'applications web et mobiles. Passionné par l'IA et la création d'expériences utilisateur belles et fonctionnelles."

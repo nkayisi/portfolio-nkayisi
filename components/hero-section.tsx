@@ -1,15 +1,18 @@
 'use client'
 
 import { ThemeToggle } from "@/components/theme-toggle";
+import { LanguageToggle } from "@/components/language-toggle";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { useLingui } from '@lingui/react';
 
 
 export default function HeroSection() {
+  const { _ } = useLingui();
 
   useEffect(() => {
     (async function () {
@@ -19,38 +22,52 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="w-full relative pt-16">
+    <div className="w-full relative pt-8">
       <div className="w-full sm:px-10 px-4 flex flex-col gap-8 justify-center items-center">
-        <div className="absolute top-4 right-4">
-          <ThemeToggle />
-        </div>
 
         <Image
           className="object-fill rounded-full ring-4 ring-primary/20"
           // src="https://placehold.co/100x100.png"
           src="/images/profile.jpg"
-          alt="Photo of me"
+          alt={_({
+            id: 'photo.alt',
+            message: 'Photo of me'
+          })}
           width={150}
           height={150}
           priority
         />
         <div className="flex flex-col gap-4 text-sm/6 text-center font-[family-name:var(--font-geist-mono)]">
           <h1 className="text-2xl font-bold text-foreground">
-            Hi, I&apos;m <span className="text-primary">Nelson K. Kayisi</span>
+            {_({
+              id: 'hero.greeting',
+              message: 'Hi, I\'m Nelson K. Kayisi'
+            })}
           </h1>
-          <p className="tracking-[-.01em] text-muted-foreground">
+          <p className="tracking-[-.01em] text-muted-foreground leading-7">
             <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
-              Full-stack Developer
+              {_({
+                id: 'role.fullstack',
+                message: 'Full-stack Developer'
+              })}
             </code>{" "}
-            and <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
-              Software Architect
+            {_({
+              id: 'role.and',
+              message: 'and'
+            })} <code className="bg-muted text-muted-foreground px-2 py-1 rounded-md font-[family-name:var(--font-geist-mono)] font-semibold border border-border">
+              {_({
+                id: 'role.architect',
+                message: 'Software Architect'
+              })}
             </code>{" "}
-            with years of experience in building web and mobile applications.
-            Passionate about AI and creating beautiful and functional user experiences.
+            {_({
+              id: 'hero.description',
+              message: 'with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences.'
+            })}
           </p>
         </div>
 
-        <div className="flex gap-4 items-center flex-row flex-wrap">
+        <div className="flex gap-4 items-center justify-center flex-row flex-wrap">
           <a
             href="#"
             rel="noopener noreferrer"
@@ -62,7 +79,10 @@ export default function HeroSection() {
               containerClassName="rounded-full"
               className="dark:bg-black bg-primary/30 cursor-pointer text-primary flex items-center space-x-2 px-6 py-2 text-sm sm:text-base"
             >
-              I&apos;m available for work
+              {_({
+                id: 'cta.available',
+                message: 'I\'m available for work'
+              })}
             </HoverBorderGradient>
           </a>
 
@@ -83,7 +103,10 @@ export default function HeroSection() {
           className="object-cover w-[400px] h-[140px] -rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
           src="/images/img_1.webp"
-          alt="About me"
+          alt={_({
+            id: 'images.about',
+            message: 'About me'
+          })}
           width={400}
           height={250}
         />
@@ -91,7 +114,10 @@ export default function HeroSection() {
           className="object-cover w-[400px] h-[140px] rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
           src="/images/img_2.webp"
-          alt="About me"
+          alt={_({
+            id: 'images.about',
+            message: 'About me'
+          })}
           width={400}
           height={250}
         />
@@ -99,21 +125,26 @@ export default function HeroSection() {
           className="object-cover w-[400px] h-[140px] -rotate-5 rounded-lg group-hover:rotate-0 transition-all duration-300 shadow-lg border border-border"
           // src="https://placehold.co/400x250.png"
           src="/images/img_3.webp"
-          alt="About me"
+          alt={_({
+            id: 'images.about',
+            message: 'About me'
+          })}
           width={400}
           height={250}
         />
       </div>
       <div className="w-full sm:px-10 px-4 flex flex-col text-muted-foreground leading-relaxed">
         <p className="mb-4">
-          I specialize in modern mobile and web technologies and love building applications
-          that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js,
-          JavaScript/TypeScript, React Native and Python/Django.
+          {_({
+            id: 'about.expertise',
+            message: 'I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django.'
+          })}
         </p>
         <p>
-          When I&apos;m not coding, you can find me exploring new technologies,
-          contributing to open source projects, or sharing knowledge with the
-          developer community.
+          {_({
+            id: 'about.personal',
+            message: 'When I\'m not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.'
+          })}
         </p>
       </div>
     </div>

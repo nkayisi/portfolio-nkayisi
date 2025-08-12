@@ -6,8 +6,11 @@ import { Button } from "@/components/ui/moving-border";
 import Image from "next/image";
 import { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
+import { useLingui } from '@lingui/react';
 
 export function ContactSection() {
+  const { _ } = useLingui();
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace: "discovery-call" });
@@ -18,8 +21,14 @@ export function ContactSection() {
   return (
     <div id="contact" className="flex flex-col gap-6 pb-12">
       <SectionTtitle
-        title="Let's work together"
-        description="Book a discovery call with me to discuss your needs, ask your questions, and explore how we can support your projects."
+        title={_({
+          id: 'contact.title',
+          message: 'Let\'s work together'
+        })}
+        description={_({
+          id: 'contact.description',
+          message: 'Book a discovery call with me to discuss your needs, ask your questions, and explore how we can support your projects.'
+        })}
         icon={<Contact className="w-5 h-5" />}
       />
 
@@ -32,7 +41,10 @@ export function ContactSection() {
             data-cal-link="nkayisi/discovery-call"
             data-cal-config='{"layout":"month_view"}'
           >
-            Book a discovery call
+            {_({
+              id: 'contact.book_call',
+              message: 'Book a discovery call'
+            })}
           </Button>
         </div>
 
@@ -43,7 +55,10 @@ export function ContactSection() {
         >
           <Image
             src="/icons/pin.png"
-            alt="Profile"
+            alt={_({
+              id: 'contact.pin_alt',
+              message: 'Pin'
+            })}
             width={200}
             height={500}
             className="absolute -top-5 -right-1 w-10 h-10"
@@ -56,7 +71,10 @@ export function ContactSection() {
               </h1>
               <Image
                 src="/images/profile.jpg"
-                alt="Profile"
+                alt={_({
+                  id: 'contact.profile_alt',
+                  message: 'Profile'
+                })}
                 width={200}
                 height={500}
                 className="w-22 h-32 object-cover border-7 rotate-12"
@@ -64,7 +82,10 @@ export function ContactSection() {
             </div>
 
             <div>
-              <span className="text-accent-foreground font-thin">Email me</span>
+              <span className="text-accent-foreground font-thin">{_({
+                id: 'contact.email_me',
+                message: 'Email me'
+              })}</span>
               <h3>nelsonkayisirirya5@gmail.com</h3>
             </div>
           </div>
