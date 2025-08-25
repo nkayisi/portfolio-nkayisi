@@ -3,6 +3,7 @@ import { LanguageProvider } from "@/components/language-context";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +53,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleTagManager gtmId="G-LB0S09CGF7" />
         <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
           <LanguageProvider>
             {children}
