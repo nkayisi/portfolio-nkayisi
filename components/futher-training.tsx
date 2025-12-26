@@ -71,15 +71,32 @@ export default function FurtherTraining() {
       />
 
       {/* Further Training Details */}
-      <div className="flex flex-col gap-4">
-        {trainings.map((training) => (
-          <div key={training.title} className="flex flex-col gap-2 border border-border rounded-lg p-4">
-            <div className="flex flex-row gap-3 flex-wrap justify-between items-center">
-              <h4 className="font-semibold">{training.title}</h4>
+      <div className="flex flex-col gap-6">
+        {trainings.map((training, index) => (
+          <div
+            key={training.title}
+            className="group relative flex flex-col gap-4 border border-border hover:border-primary/50 rounded-xl p-6 bg-gradient-to-br from-card/80 to-card backdrop-blur-sm transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 overflow-hidden"
+            style={{
+              animationDelay: `${index * 100}ms`
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+            <div className="relative z-10 flex flex-row gap-3 flex-wrap justify-between items-start">
+              <div className="flex flex-col gap-2 flex-1">
+                <div className="flex items-center gap-3">
+                  <h4 className="font-semibold text-lg group-hover:text-primary transition-colors duration-300">
+                    {training.title}
+                  </h4>
+                  <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                    {training.year}
+                  </span>
+                </div>
+              </div>
               <div className="flex flex-row gap-2">
                 <Button
                   variant="outline"
-                  className="text-[10px] leading-tight tracking-[-0.015em] py-2 px-3.5 min-w-0 !text-primary"
+                  className="text-xs leading-tight tracking-[-0.015em] py-2 px-4 min-w-0 !text-primary hover:scale-105 transition-transform duration-300"
                 >
                   <IconDownload className="w-4 h-4 mr-2" />
                   {_({
@@ -89,17 +106,17 @@ export default function FurtherTraining() {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-col gap-4">
-              <p className="text-muted-foreground text-sm font-normal leading-normal">
+
+            <div className="relative z-10 flex flex-col gap-4">
+              <p className="text-muted-foreground text-sm font-medium leading-normal group-hover:text-foreground/90 transition-colors duration-300">
                 {training.subtitle}
               </p>
-              <p className="text-sm font-thin leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                 {training.description}
               </p>
-              <span className="text-muted-foreground text-sm font-thin italic w-fit rounded-full px-4 py-1 border border-border">
-                {training.year}
-              </span>
             </div>
+
+            <div className="absolute top-2 right-2 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
           </div>
         ))}
       </div>

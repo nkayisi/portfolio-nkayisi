@@ -27,29 +27,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en" suppressHydrationWarning className="scroll-smooth">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                const theme = localStorage.getItem('portfolio-theme') || 'dark';
-                const root = document.documentElement;
-                
-                if (theme === 'system') {
-                  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                  root.classList.add(systemTheme);
-                } else {
-                  root.classList.add(theme);
-                }
-              } catch (e) {
-                // Fallback to dark theme if localStorage is not available
-                document.documentElement.classList.add('dark');
-              }
-            `,
-          }}
-        />
-      </head>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth dark">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

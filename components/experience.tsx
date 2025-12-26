@@ -82,19 +82,48 @@ export function Experience() {
                 })}
                 icon={<Expand className="w-5 h-5" />}
             />
-            <div className="flex flex-col gap-4">
-                {experiences.map((experience) => (
-                    <div key={experience.title} className="flex flex-row gap-5 border border-slate-200 dark:border-slate-900 bg-zinc-50 dark:bg-gray-950 rounded-lg p-6">
-                        <div className={`bg-slate-200 dark:bg-primary/35 flex items-center justify-center border border-border min-w-6 min-h-12 rounded-full`}></div>
-                        <div className="flex flex-col gap-2">
-                            <span className="text-sm text-gray-500 italic">{experience.year}</span>
-                            <h4 className="font-medium">{experience.title}</h4>
-                            <span className="text-xs text-gray-500 italic">
-                                {experience.company} - {experience.location}</span>
-                            <p className="text-sm font-thin leading-relaxed">
+            <div className="relative flex flex-col gap-6">
+                <div className="absolute left-[11px] top-8 bottom-8 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-primary/20"></div>
+
+                {experiences.map((experience, index) => (
+                    <div
+                        key={experience.title}
+                        className="group relative flex flex-row gap-6 border border-border hover:border-primary/50 bg-gradient-to-br from-card/80 to-card backdrop-blur-sm rounded-xl p-6 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:-translate-x-1"
+                        style={{
+                            animationDelay: `${index * 150}ms`
+                        }}
+                    >
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+
+                        <div className="relative z-10 flex items-center justify-center">
+                            <div className="absolute w-6 h-6 bg-primary/20 rounded-full blur-md group-hover:blur-lg transition-all duration-500"></div>
+                            <div className="relative bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center min-w-6 min-h-6 rounded-full border-2 border-background shadow-lg group-hover:scale-110 transition-transform duration-500">
+                                <div className="w-2 h-2 bg-background rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <div className="relative flex flex-col gap-3 flex-1 z-10">
+                            <div className="flex items-center gap-3 flex-wrap">
+                                <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                                    {experience.year}
+                                </span>
+                            </div>
+
+                            <h4 className="font-semibold text-lg group-hover:text-primary transition-colors duration-300">
+                                {experience.title}
+                            </h4>
+
+                            <span className="text-sm text-muted-foreground font-medium flex items-center gap-2">
+                                <span className="text-primary">●</span>
+                                {experience.company} - {experience.location}
+                            </span>
+
+                            <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
                                 {experience.description}
                             </p>
                         </div>
+
+                        <div className="absolute top-2 right-2 w-24 h-24 bg-primary/10 rounded-full blur-2xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
                     </div>
                 ))}
             </div>

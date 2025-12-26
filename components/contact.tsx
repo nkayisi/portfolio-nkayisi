@@ -19,7 +19,7 @@ export function ContactSection() {
   }, []);
 
   return (
-    <div id="contact" className="flex flex-col gap-6 pb-12">
+    <div id="contact" className="flex flex-col gap-8 pb-12">
       <SectionTtitle
         title={_({
           id: 'contact.title',
@@ -33,14 +33,18 @@ export function ContactSection() {
       />
 
       <div className="flex flex-col gap-8">
-        <div>
+        <div className="group">
           <Button
             variant="outline"
-            className="max-w-max text-sm leading-tight tracking-[-0.015em] py-2 px-3.5 min-w-0 !text-primary"
+            className="max-w-max text-sm leading-tight tracking-[-0.015em] py-3 px-5 min-w-0 !text-primary hover:scale-105 transition-transform duration-300"
             data-cal-namespace="discovery-call"
             data-cal-link="nkayisi/discovery-call"
             data-cal-config='{"layout":"month_view"}'
           >
+            <span className="relative flex h-2 w-2 mr-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
             {_({
               id: 'contact.book_call',
               message: 'Book a discovery call'
@@ -51,8 +55,11 @@ export function ContactSection() {
         <a
           href="mailto:nelsonkayisirirya5@gmail.com"
           target="_blank"
-          className="max-w-md sm:min-w-md mx-auto shadow-2xl bg-slate-50 dark:bg-black/50 -rotate-12 relative inline-flex flex-col border border-border rounded-lg p-8 hover:scale-95 duration-500"
+          rel="noopener noreferrer"
+          className="group max-w-md sm:min-w-md mx-auto shadow-2xl bg-gradient-to-br from-card/90 to-card backdrop-blur-sm -rotate-6 hover:rotate-0 relative inline-flex flex-col border border-border hover:border-primary/50 rounded-xl p-8 hover:scale-105 duration-500 overflow-hidden"
         >
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
           <Image
             src="/icons/pin.png"
             alt={_({
@@ -61,12 +68,12 @@ export function ContactSection() {
             })}
             width={200}
             height={500}
-            className="absolute -top-5 -right-1 w-10 h-10"
+            className="absolute -top-5 -right-1 w-10 h-10 group-hover:rotate-12 transition-transform duration-300"
           />
 
-          <div>
+          <div className="relative z-10">
             <div className="flex items-start justify-between gap-4">
-              <h1 className="text-lg text-muted-foreground font-semibold">
+              <h1 className="text-lg text-foreground font-semibold group-hover:text-primary transition-colors duration-300">
                 Nelson K. Kayisi
               </h1>
               <Image
@@ -77,18 +84,20 @@ export function ContactSection() {
                 })}
                 width={200}
                 height={500}
-                className="w-22 h-32 object-cover border-7 rotate-12"
+                className="w-22 h-32 object-cover border-4 border-border rounded-lg rotate-6 group-hover:rotate-12 transition-transform duration-500 shadow-lg"
               />
             </div>
 
-            <div>
-              <span className="text-accent-foreground font-thin">{_({
+            <div className="mt-4">
+              <span className="text-muted-foreground text-sm font-medium">{_({
                 id: 'contact.email_me',
                 message: 'Email me'
               })}</span>
-              <h3>nelsonkayisirirya5@gmail.com</h3>
+              <h3 className="text-foreground font-medium group-hover:text-primary transition-colors duration-300">nelsonkayisirirya5@gmail.com</h3>
             </div>
           </div>
+
+          <div className="absolute bottom-2 left-2 w-32 h-32 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
         </a>
       </div>
     </div>

@@ -10,6 +10,10 @@ const config = {
   ],
   format: 'po',
   compileNamespace: 'cjs',
+  extractorParserOptions: {
+    tsExperimentalDecorators: true,
+  },
+  orderBy: 'messageId',
 }
 
 export default config

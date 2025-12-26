@@ -6,45 +6,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: components/hero-section.tsx:91
-#: components/hero-section.tsx:99
-#: components/hero-section.tsx:107
-msgid "About me"
-msgstr "About me"
-
-#: components/hero-section.tsx:50
-msgid "and"
-msgstr "and"
-
-#: components/hero-section.tsx:48
-msgid "Full-stack Developer"
-msgstr "Full-stack Developer"
-
-#: components/hero-section.tsx:44
-msgid "Hi, I'm <0>Nelson K. Kayisi</0>"
-msgstr "Hi, I'm <0>Nelson K. Kayisi</0>"
-
-#: components/hero-section.tsx:114
-msgid "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
-msgstr "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
-
-#: components/hero-section.tsx:70
-msgid "I'm available for work"
-msgstr "I'm available for work"
-
-#: components/hero-section.tsx:37
+#: components/hero-section.tsx
 msgid "Photo of me"
 msgstr "Photo of me"
 
-#: components/hero-section.tsx:51
+#: components/hero-section.tsx
+msgid "Hi, I'm Nelson K. Kayisi"
+msgstr "Hi, I'm Nelson K. Kayisi"
+
+#: components/hero-section.tsx
+msgid "Full-stack Developer"
+msgstr "Full-stack Developer"
+
+#: components/hero-section.tsx
+msgid "and"
+msgstr "and"
+
+#: components/hero-section.tsx
 msgid "Software Architect"
 msgstr "Software Architect"
 
-#: components/hero-section.tsx:119
+#: components/hero-section.tsx
+msgid "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
+msgstr "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
+
+#: components/hero-section.tsx
+msgid "I'm available for work"
+msgstr "I'm available for work"
+
+#: components/hero-section.tsx
+msgid "About me"
+msgstr "About me"
+
+#: components/hero-section.tsx
+msgid "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
+msgstr "I specialize in modern mobile and web technologies and love building applications that make a difference. My expertise includes React/Next.js, Vue.js/Nuxt.js, JavaScript/TypeScript, React Native and Python/Django."
+
+#: components/hero-section.tsx
 msgid "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
 msgstr "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
 
-#: components/hero-section.tsx:53
-msgid "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
-msgstr "with years of experience in building web and mobile applications. Passionate about AI and creating beautiful and functional user experiences."
+#: components/projects-grid.tsx
+msgid "All"
+msgstr "All"
+
+#: components/projects-grid.tsx
+msgid "Web"
+msgstr "Web"
+
+#: components/projects-grid.tsx
+msgid "Mobile"
+msgstr "Mobile"
+
+#: components/projects-grid.tsx
+msgid "Recent Projects"
+msgstr "Recent Projects"
+
+#: components/projects-grid.tsx
+msgid "I've worked on a variety of projects, from small personal websites to large-scale enterprise applications."
+msgstr "I've worked on a variety of projects, from small personal websites to large-scale enterprise applications."
+
+#: components/projects-grid.tsx
+msgid "View all projects"
+msgstr "View all projects"
+
+#: components/quick-links.tsx
+msgid "Home"
+msgstr "Home"
+
+#: components/quick-links.tsx
+msgid "Skills"
+msgstr "Skills"
+
+#: components/quick-links.tsx
+msgid "Experience"
+msgstr "Experience"
+
+#: components/quick-links.tsx
+msgid "Projects"
+msgstr "Projects"
+
+#: components/quick-links.tsx
+msgid "Contact"
+msgstr "Contact"
+
+#: components/stats-section.tsx
+msgid "Projects Completed"
+msgstr "Projects Completed"
+
+#: components/stats-section.tsx
+msgid "Years Experience"
+msgstr "Years Experience"
+
+#: components/stats-section.tsx
+msgid "Certifications"
+msgstr "Certifications"
+
+#: components/stats-section.tsx
+msgid "Happy Clients"
+msgstr "Happy Clients"
