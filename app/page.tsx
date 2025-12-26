@@ -1,21 +1,20 @@
+import BackToTop from "@/components/back-to-top";
 import { ContactSection } from "@/components/contact";
 import EducationSection from "@/components/education-section";
 import { Experience } from "@/components/experience";
 import Footer from "@/components/footer";
 import FurtherTraining from "@/components/futher-training";
 import HeroSection from "@/components/hero-section";
-import { LanguageToggle } from "@/components/language-toggle";
 import ProjectsGrid from "@/components/projects-grid";
+import QuickLinks from "@/components/quick-links";
 import SkillsWheel from "@/components/skills-wheel";
-import { Spotlight } from "@/components/ui/spotlight-new";
+import StatsSection from "@/components/stats-section";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { AnimatedGradientBg } from "@/components/ui/animated-gradient-bg";
+import { CursorGlow } from "@/components/ui/cursor-glow";
 import { FloatingParticles } from "@/components/ui/floating-particles";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
-import { CursorGlow } from "@/components/ui/cursor-glow";
-import { AnimatedGradientBg } from "@/components/ui/animated-gradient-bg";
-import QuickLinks from "@/components/quick-links";
-import StatsSection from "@/components/stats-section";
-import BackToTop from "@/components/back-to-top";
+import { Spotlight } from "@/components/ui/spotlight-new";
 
 export default function Home() {
   return (
